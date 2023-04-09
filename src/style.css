@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/*Шапка сайта*/
+.header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: rgb(168, 50, 82);
+}
+
+.header__logo{
+    width: 250px;
+    height: 250px;
+}
+.header__text{
+    width: 100%;
+    padding-bottom: 20px;
+
+    font-size: 30pt;
+    text-align: center;
+    color: white;
+}
+.header__menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    padding: 10px 0;
+
+    background-color: rgb(168, 50, 82);
+}
+.header__link--decor{
+    text-decoration: none;
+    color: white;
+}
+.header__link--decor:visited{
+    color: white;
+}
+.header__link{
+    padding: 5px 5px;
+    border: 1pt solid #fff;
+    font-size: 16pt;
+
+    transition: transform 0.5s ease 0s;
+}
+.header__link:hover{
+    transform: scale(1.1);
+
+    padding: 5px 5px;
+    border: 1pt solid #fff;
+    box-shadow: 0 0 15px white;
+
+    font-size: 16pt;
+    background-color: white;
+    color: rgb(168, 50, 82);
+}
+
+/*Подвал сайта*/
+.footer{
+    display: flex;
+    background-color: rgb(168, 50, 82);
+}
+.footer__text--info{
+    text-align: center;
+    font-size: 12pt;
+
+    padding-top: 20px;
+
+    color: white;
+}
+.footer__img{
+    width: 150px;
+    height: auto;
+    padding-right: 20px;
+}
+/*Основное содержимое сайта*/
+.block__main{
+    background-color: rgb(253, 248, 250);
+}
+
+.block__name{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25pt;
+
+    padding: 20px 0;
+}
+.block__content{
+    display: flex;
+}
+.block__text{
+    font-size: 18pt;
+    padding-right: 20px;
+}
+
+.block__text, .block__img{
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+
+}
+.block__img{
+    width: 400px;
+
+    transition: all 0.5s ease 0s;
+}
+.block__img--about{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.block__img:hover{
+    transform: scale(1.1);
+}
+.block__img--artist{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+    height: auto;
+
+    transition: all 0.5s ease 0s;
+}
+.block__img--artist:hover{
+    transform: scale(1.1);
+}
+.block__link{
+    margin: 0 auto;
+    width: 20%;
+    padding: 5px 5px;
+    border: 1pt solid #fff;
+
+    text-align: center;
+    font-size: 14pt;
+
+    background-color: rgb(168, 50, 82);
+
+    color: white;
+
+    transition: all 0.5s ease 0s;
+}
+.block__link:hover{
+    box-shadow: 0 0 20px rgb(168, 50, 82);
+
+    background-color: #fff;
+    color: rgb(168, 50, 82);
+}
+
+.space{
+    height: 60px;
+
+    background-color: rgb(168, 50, 82);
+}
