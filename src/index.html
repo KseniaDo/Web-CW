@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Художественная галерея "Art"</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,13 +16,22 @@
                     <a class="header__link--decor" href="shop.html"><p class="header__link">Товары</p></a>
                     <a class="header__link--decor" href="about.html"><p class="header__link">О нас</p></a>
                 </div>
-                <a href="index.html"><img class="header__logo" src="Logo.png" alt=""></a>
-                <p class="header__text">Добро пожаловать на сайт художественной галереи!</p>
+                <div class="header__content">
+                    <a href="index.html"><img class="header__logo" src="Logo.png" alt=""></a>
+                    <p class="header__text">Добро пожаловать на сайт художественной галереи!</p>
+                </div>
         </div>
         <div class="block__main">
             <p class="block__name">Картины</p>
-            <div class="block__content">
-                <img class="block__img" src="Korovin_1.jpg" alt="">
+            <div class="block__content--main">
+                <div class="slider--art">
+                    <div class="slider--elements" id="sliderJs1">
+                        <img class="slider--img" src="Korovin_1.jpg" alt="">
+                        <img class="slider--img" src="Korovin_2.jpg" alt="">
+                        <img class="slider--img" src="Korovin_3.jpg" alt="">
+                        <img class="slider--img" src="Savrasov_1.jpg" alt="">
+                    </div>
+                </div>
                 <p class="block__text">На нашем сайте вы можете ознакомиться с информацией о картинах, находящихся в галерее. Также на экскурсии предоставляется аудиогид с различными настройками для любого слушателя!</p>
             </div>
             <a class="header__link--decor" href="art.html"><p class="block__link">Перейти к картинам</p></a>
@@ -29,8 +39,15 @@
         <div class="space"></div>
         <div class="block__main">
             <p class="block__name">Художники</p>
-            <div class="block__content">
-                <img class="block__img" src="Kustodiev.jpg" alt="">
+            <div class="block__content--main">
+                <div class="slider--art">
+                    <div class="slider--elements" id="sliderJs2">
+                        <img class="slider--img" src="Korovin.jpeg" alt="">
+                        <img class="slider--img" src="Kustodiev.jpg" alt="">
+                        <img class="slider--img" src="Rublev.jpeg" alt="">
+                        <img class="slider--img" src="Savrasov.jpg" alt="">
+                    </div>
+                </div>
                 <p class="block__text">Если вам понравились картины определенного художника, вы всегда можете ознакомиться с его краткой биографией на нашем сайте.</p>
             </div>
             <a class="header__link--decor" href="artist.html"><p class="block__link">Перейти к художникам</p></a>
@@ -38,8 +55,15 @@
         <div class="space"></div>
         <div class="block__main">
             <p class="block__name">Магазин</p>
-            <div class="block__content">
-                <img class="block__img" src="Shop_1.jpg" alt="">
+            <div class="block__content--main">
+                <div class="slider--art">
+                    <div class="slider--elements" id="sliderJs3">
+                        <img class="slider--img" src="Shop_1.jpg" alt="">
+                        <img class="slider--img" src="Shop_2.jpg" alt="">
+                        <img class="slider--img" src="Shop_3.jpg" alt="">
+                        <img class="slider--img" src="Shop_4.jpg" alt="">
+                    </div>
+                </div>
                 <p class="block__text">Наша галеря предоставляет посетителям магазин художественных товаров, куда вы можете направиться после экскурсии. При предоставлении билета скидка 10%!</p>
             </div>
             <a class="header__link--decor" href="shop.html"><p class="block__link">Перейти к товарам</p></a>
@@ -47,7 +71,7 @@
         <div class="space"></div>
         <div class="block__main">
             <p class="block__name">О нас</p>
-            <div class="block__content">
+            <div class="block__content--main">
                 <img class="block__img" src="Logo.png" alt="">
                 <p class="block__text">Ознакомиться с нашей историей, подробным описанием нашего местонахождения мы можете в данном разделе. Запись на экскурсию осуществляется по телефону.</p>
             </div>
@@ -62,5 +86,6 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
