@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poiret+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="header__menu">
-                <a class="header__link--decor" href="index.html"><p class="header__link">Главная</p></a>
-                <a class="header__link--decor" href="art.html"><p class="header__link">Картины</p></a>
-                <a class="header__link--decor" href="artist.html"><p class="header__link">Художники</p></a>
-                <a class="header__link--decor" href="shop.html"><p class="header__link">Товары</p></a>
-                <a class="header__link--decor" href="about.html"><p class="header__link">О нас</p></a>
-            </div>
-            <div class="header__content">
-                <a href="index.html"><img class="header__logo" src="Logo.png" alt=""></a>
-                <p class="header__text">Магазин</p>
-            </div>
+    <header class="header">
+        <ul class="navigation">
+            <li class="link_decor navigation_item"><a class="link" href="index.html">Главная</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="art.html">Картины</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="artist.html">Художники</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="shop.html">Товары</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="about.html">О нас</a></li>
+        </ul>
+        <div class="header_content">
+            <a href="index.html"><img class="header_logo" src="common/Logo.png" alt=""></a>
+            <p class="header_text">Магазин</p>
         </div>
-        <div class="block__main">
-            <p class="block__name">"vista-artista" ves-07</p>
-            <div class="block__content--shop">
-                <img class="block__img" src="Shop_1.jpg" alt="">
-                <div class="shop__table">
+    </header>
+    <main class="main">
+        <article class="article">
+            <p class="article_header">"vista-artista" ves-07</p>
+            <div class="article_content">
+                <img class="article_image image_shop" src="shop/Shop_1.jpg" alt="">
+                <div class="article_table table_shop">
                     <table>
                         <tbody>
                             <tr>
@@ -50,16 +56,16 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="block__text">Цена: 540 рублей.</p>
+                    <p class="article_text text_shop">Цена: 540 рублей.</p>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="space"></div>
-        <div class="block__main">
-            <p class="block__name">"сонет"</p>
-            <div class="block__content--shop">
-                <img class="block__img" src="Shop_2.jpg" alt="">
-                <div class="shop__table">
+        <article class="article">
+            <p class="article_header">"сонет"</p>
+            <div class="article_content">
+                <img class="article_image image_shop" src="shop/Shop_2.jpg" alt="">
+                <div class="article_table table_shop">
                     <table>
                         <tbody>
                             <tr>
@@ -80,16 +86,16 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="block__text">Цена: 519 рублей.</p>
+                    <p class="article_text text_shop">Цена: 519 рублей.</p>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="space"></div>
-        <div class="block__main">
-            <p class="block__name">"ладога"</p>
-            <div class="block__content--shop">
-                <img class="block__img" src="Shop_3.jpg" alt="">
-                <div class="shop__table">
+        <article class="article">
+            <p class="article_header">"ладога"</p>
+            <div class="article_content">
+                <img class="article_image image_shop" src="shop/Shop_3.jpg" alt="">
+                <div class="article_table table_shop">
                     <table>
                         <tbody>
                             <tr>
@@ -110,16 +116,16 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="block__text">Цена: 1499 рублей.</p>
+                    <p class="article_text text_shop">Цена: 1499 рублей.</p>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="space"></div>
-        <div class="block__main">
-            <p class="block__name">"pebeo"</p>
-            <div class="block__content--shop">
-                <img class="block__img" src="Shop_4.jpg" alt="">
-                <div class="shop__table">
+        <article class="article">
+            <p class="article_header">"pebeo"</p>
+            <div class="article_content">
+                <img class="article_image image_shop" src="shop/Shop_4.jpg" alt="">
+                <div class="article_table table_shop">
                     <table>
                         <tbody>
                             <tr>
@@ -140,18 +146,19 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="block__text">Цена: 3247 рублей.</p>
+                    <p class="article_text text_shop">Цена: 3247 рублей.</p>
                 </div>
             </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <img class="footer_logo" src="common/Logo.png">
+        <div class="footer_text">
+            <p class="footer_text_info">Телефон: +7(000)000-00-00</p>
+            <p class="footer_text_info">Почта: art_gallery@mail.ru</p>
+            <p class="footer_text_info">Адрес: ул. Атласова, д. 123</p>
         </div>
-        <div class="footer">
-            <img class="footer__img"src="Logo.png">
-            <div class="footer__text">
-                <p class="footer__text--info">Телефон: +7(000)000-00-00</p>
-                <p class="footer__text--info">Почта: art_gallery@mail.ru</p>
-                <p class="footer__text--info">Адрес: ул. Атласова, д. 123</p>
-            </div>
-        </div>
-    </div>
+    </footer>
 </body>
+
 </html>
