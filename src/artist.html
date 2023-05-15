@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Художники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poiret+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="header__menu">
-                <a class="header__link--decor" href="index.html"><p class="header__link">Главная</p></a>
-                <a class="header__link--decor" href="art.html"><p class="header__link">Картины</p></a>
-                <a class="header__link--decor" href="artist.html"><p class="header__link">Художники</p></a>
-                <a class="header__link--decor" href="shop.html"><p class="header__link">Товары</p></a>
-                <a class="header__link--decor" href="about.html"><p class="header__link">О нас</p></a>
-            </div>
-            <div class="header__content">
-                <a href="index.html"><img class="header__logo" src="Logo.png" alt=""></a>
-                <p class="header__text">Художники</p>
-            </div>
+    <header class="header">
+        <ul class="navigation">
+            <li class="link_decor navigation_item"><a class="link" href="index.html">Главная</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="art.html">Картины</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="artist.html">Художники</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="shop.html">Товары</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="about.html">О нас</a></li>
+        </ul>
+        <div class="header_content">
+            <a href="index.html"><img class="header_logo" src="common/Logo.png" alt=""></a>
+            <p class="header_text">Художники</p>
         </div>
-        <div class="block__main">
-            <p class="block__name">коровин константин алексеевич</p>
-            <div class="block__content">
-                <img class="block__img--artist" src="Korovin.jpeg" alt="">
-                <div class="artist__table">
+    </header>
+    <main class="main">
+        <article class="article">
+            <p class="article_header">коровин константин алексеевич</p>
+            <div class="article_content">
+                <img class="article_image image_artist" src="artist/Korovin.jpeg" alt="">
+                <div class="article_table">
                     <table>
                         <tbody>
                             <tr>
@@ -54,23 +60,28 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="smth">
-                        <input type="checkbox" class="read__more__checker" id="read__more__checker1"/>
-                        <div class="block__info">
-                            <p class="block__text">Родился 5 декабря 1861 года в Москве. Происходил из состоятельной купеческой семьи. В отротчестве переехал в Большие Мытищи, где начался его путь художника. В 13 лет поступил на архитектурное отделение Московского училища живописи, ваяния и зодчества, через год перешел на отделение живописи. Учился у Алексея Саврасова, Василия Поленова и Василия Перова. Много путешествовал, где самое большое впечатление на художника произвел Париж. Умер 11 сентября 1939 года.</p>
-                            <div class="bottom"></div>
+                    <div class="checker">
+                        <input type="checkbox" class="read_more" id="read_more_1" />
+                        <div class="article_information">
+                            <p class="article_text">Родился 5 декабря 1861 года в Москве. Происходил из состоятельной
+                                купеческой семьи. В отротчестве переехал в Большие Мытищи, где начался его путь
+                                художника. В 13 лет поступил на архитектурное отделение Московского училища живописи,
+                                ваяния и зодчества, через год перешел на отделение живописи. Учился у Алексея Саврасова,
+                                Василия Поленова и Василия Перова. Много путешествовал, где самое большое впечатление на
+                                художника произвел Париж. Умер 11 сентября 1939 года.</p>
+                            <div class="hidden_part"></div>
                         </div>
-                        <label for="read__more__checker1" class="read__more__button"></label>
+                        <label for="read_more_1" class="button_read_more"></label>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="space"></div>
-        <div class="block__main">
-            <p class="block__name">саврасов алексей кондратьевич</p>
-            <div class="block__content">
-                <img class="block__img--artist" src="Savrasov.jpg" alt="">
-                <div class="artist__table">
+        <article class="article">
+            <p class="article_header">саврасов алексей кондратьевич</p>
+            <div class="article_content">
+                <img class="article_image image_artist" src="artist/Savrasov.jpg" alt="">
+                <div class="article_table">
                     <table>
                         <tbody>
                             <tr>
@@ -99,23 +110,27 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="smth">
-                        <input type="checkbox" class="read__more__checker" id="read__more__checker2"/>
-                        <div class="block__info">
-                            <p class="block__text">Родился 12 мая 1830 года в Москве. В 1844 году поступил в Московское училище живописи и ваяния. Известным имя Саврасова сделала работа "Вид на Кремль от Крымского моста в ненастную погоду", выполненная в 1891 году. В 1851 году стал руководителем пейзажного класса училища живописи и ваяния. Художник много участвовал в различных экспозициях. Умер 26 сентября 1897 года.</p>
-                            <div class="bottom"></div>
+                    <div class="checker">
+                        <input type="checkbox" class="read_more" id="read_more_2" />
+                        <div class="article_information">
+                            <p class="article_text">Родился 12 мая 1830 года в Москве. В 1844 году поступил в Московское
+                                училище живописи и ваяния. Известным имя Саврасова сделала работа "Вид на Кремль от
+                                Крымского моста в ненастную погоду", выполненная в 1891 году. В 1851 году стал
+                                руководителем пейзажного класса училища живописи и ваяния. Художник много участвовал в
+                                различных экспозициях. Умер 26 сентября 1897 года.</p>
+                            <div class="hidden_part"></div>
                         </div>
-                        <label for="read__more__checker2" class="read__more__button"></label>
+                        <label for="read_more_2" class="button_read_more"></label>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="space"></div>
-        <div class="block__main">
-            <p class="block__name">кустодиев борис михайлович</p>
-            <div class="block__content">
-                <img class="block__img--artist" src="Kustodiev.jpg" alt="">
-                <div class="artist__table">
+        <article class="article">
+            <p class="article_header">кустодиев борис михайлович</p>
+            <div class="article_content">
+                <img class="article_image image_artist" src="artist/Kustodiev.jpg" alt="">
+                <div class="article_table">
                     <table>
                         <tbody>
                             <tr>
@@ -144,23 +159,27 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="smth">
-                        <input type="checkbox" class="read__more__checker" id="read__more__checker3"/>
-                        <div class="block__info">
-                            <p class="block__text">Родился 23 февраля 1878 года в Астрахани. Учился в церковно-приходской школе, потом в гимназии. В 1894-1896 годах брал уроки рисования у выпускника Петербургской Академии художеств П.А. Власова. В 1904 году стал членом-учредителем "Нового общества художников". К сожалению, с 1909 года у Кустодиева начались сильные проблемы со здоровьем. Умер 26 мая 1927 года.</p>
-                            <div class="bottom"></div>
+                    <div class="checker">
+                        <input type="checkbox" class="read_more" id="read_more_3" />
+                        <div class="article_information">
+                            <p class="article_text">Родился 23 февраля 1878 года в Астрахани. Учился в
+                                церковно-приходской школе, потом в гимназии. В 1894-1896 годах брал уроки рисования у
+                                выпускника Петербургской Академии художеств П.А. Власова. В 1904 году стал
+                                членом-учредителем "Нового общества художников". К сожалению, с 1909 года у Кустодиева
+                                начались сильные проблемы со здоровьем. Умер 26 мая 1927 года.</p>
+                            <div class="hidden_part"></div>
                         </div>
-                        <label for="read__more__checker3" class="read__more__button"></label>
+                        <label for="read_more_3" class="button_read_more"></label>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
         <div class="space"></div>
-        <div class="block__main">
-            <p class="block__name">рублев андрей</p>
-            <div class="block__content">
-                <img class="block__img--artist" src="Rublev.jpeg" alt="">
-                <div class="artist__table">
+        <article class="article">
+            <p class="article_header">рублев андрей</p>
+            <div class="article_content">
+                <img class="article_image image_artist" src="artist/Rublev.jpeg" alt="">
+                <div class="article_table">
                     <table>
                         <tbody>
                             <tr>
@@ -189,25 +208,30 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="smth">
-                        <input type="checkbox" class="read__more__checker" id="read__more__checker4"/>
-                        <div class="block__info">
-                            <p class="block__text">Родился в 1360-е годы. Предполагают что прозвище "Рублев" обозначает происхождение из ремесленной семьи. Творчество Рублева сложилось на почве художественных традиций Московского княжества. Первое упоминание в летописи появилось в 1405 году, что им был расписан Благовещенский собор в Московском Кремле. Скончался во время морового поветрия 17 октября 1428 года или 29 января 1430 года в Москве.</p>
-                            <div class="bottom"></div>
+                    <div class="checker">
+                        <input type="checkbox" class="read_more" id="read_more_4" />
+                        <div class="article_information">
+                            <p class="article_text">Родился в 1360-е годы. Предполагают что прозвище "Рублев" обозначает
+                                происхождение из ремесленной семьи. Творчество Рублева сложилось на почве художественных
+                                традиций Московского княжества. Первое упоминание в летописи появилось в 1405 году, что
+                                им был расписан Благовещенский собор в Московском Кремле. Скончался во время морового
+                                поветрия 17 октября 1428 года или 29 января 1430 года в Москве.</p>
+                            <div class="hidden_part"></div>
                         </div>
-                        <label for="read__more__checker4" class="read__more__button"></label>
+                        <label for="read_more_4" class="button_read_more"></label>
                     </div>
                 </div>
             </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <img class="footer_logo" src="common/Logo.png">
+        <div class="footer_text">
+            <p class="footer_text_info">Телефон: +7(000)000-00-00</p>
+            <p class="footer_text_info">Почта: art_gallery@mail.ru</p>
+            <p class="footer_text_info">Адрес: ул. Атласова, д. 123</p>
         </div>
-        <div class="footer">
-            <img class="footer__img"src="Logo.png">
-            <div class="footer__text">
-                <p class="footer__text--info">Телефон: +7(000)000-00-00</p>
-                <p class="footer__text--info">Почта: art_gallery@mail.ru</p>
-                <p class="footer__text--info">Адрес: ул. Атласова, д. 123</p>
-            </div>
-        </div>
-    </div>
+    </footer>
 </body>
+
 </html>

@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>О нас</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poiret+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-                <div class="header__menu">
-                    <a class="header__link--decor" href="index.html"><p class="header__link">Главная</p></a>
-                    <a class="header__link--decor" href="art.html"><p class="header__link">Картины</p></a>
-                    <a class="header__link--decor" href="artist.html"><p class="header__link">Художники</p></a>
-                    <a class="header__link--decor" href="shop.html"><p class="header__link">Товары</p></a>
-                    <a class="header__link--decor" href="about.html"><p class="header__link">О нас</p></a>
-                </div>
-                <div class="header__content">
-                    <a href="index.html"><img class="header__logo" src="Logo.png" alt=""></a>
-                    <p class="header__text">О нас</p>
-                </div>
+    <header class="header">
+        <ul class="navigation">
+            <li class="link_decor navigation_item"><a class="link" href="index.html">Главная</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="art.html">Картины</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="artist.html">Художники</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="shop.html">Товары</a></li>
+            <li class="link_decor navigation_item"><a class="link" href="about.html">О нас</a></li>
+        </ul>
+        <div class="header_content">
+            <a href="index.html"><img class="header_logo" src="common/Logo.png" alt=""></a>
+            <p class="header_text">О нас</p>
         </div>
-        <div class="block__main">
-            <div class="block__content">
-                <img class="block__img--about" src="Logo.png" alt="">
-                <div class="block__text--about">
-                    <p class="block__text">Наша галерея открыла свои двери в 2017 году и насчитывает более 50 картин из постоянной экспозиции. Приобретая абонимент у нас, вы получаете доступ к сезонным экскурсиям, расположенным в отдельном зале!</p>
-                    <p class="block__text">Режим работы: пн-пт 10:00-20:00</p>
-                    <p class="block__text">Телефон для записи: +7(000)000-00-00</p>
-                    <p class="block__text">Адрес: г. Санкт-Петербург, ул. Атласова, д. 123</p>
-                    <p class="block__text">Для пенсионеров, детей до 10 лет, а также студентов скидка 30%!</p>
+    </header>
+    <main class="main">
+        <article class="article">
+            <div class="article_content">
+                <img class="article_image image_about" src="common/Logo.png" alt="">
+                <div class="article_text_about">
+                    <p class="article_text">Наша галерея открыла свои двери в 2017 году и насчитывает более 50 картин из
+                        постоянной экспозиции. Приобретая абонимент у нас, вы получаете доступ к сезонным экскурсиям,
+                        расположенным в отдельном зале!</p>
+                    <p class="article_text">Режим работы: пн-пт 10:00-20:00</p>
+                    <p class="article_text">Телефон для записи: +7(000)000-00-00</p>
+                    <p class="article_text">Адрес: г. Санкт-Петербург, ул. Атласова, д. 123</p>
+                    <p class="article_text">Для пенсионеров, детей до 10 лет, а также студентов скидка 30%!</p>
                 </div>
             </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <img class="footer_logo" src="common/Logo.png">
+        <div class="footer_text">
+            <p class="footer_text_info">Телефон: +7(000)000-00-00</p>
+            <p class="footer_text_info">Почта: art_gallery@mail.ru</p>
+            <p class="footer_text_info">Адрес: ул. Атласова, д. 123</p>
         </div>
-        <div class="footer">
-            <img class="footer__img"src="Logo.png">
-            <div class="footer__text">
-                <p class="footer__text--info">Телефон: +7(000)000-00-00</p>
-                <p class="footer__text--info">Почта: art_gallery@mail.ru</p>
-                <p class="footer__text--info">Адрес: ул. Атласова, д. 123</p>
-            </div>
-        </div>
-    </div>
+    </footer>
 </body>
+
 </html>
