@@ -41,8 +41,8 @@
 .link {
     font-family: 'Old Standard TT', serif;
     text-decoration: none;
+    color: white;
 }
-
 .link:visited {
     color: white;
 }
@@ -116,7 +116,6 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 25pt;
-
     padding: 20px 0;
 }
 
