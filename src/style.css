@@ -1,7 +1,18 @@
+/*Общие параметры*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/*Определение шрифта для любого текста*/
+p,
+a,
+li,
+th,
+td,
+label {
+    font-family: 'Old Standard TT', serif;
 }
 
 .header,
@@ -12,14 +23,24 @@
     margin: 0 auto;
 }
 
+/*Общее оформление для кнопок*/
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:visited {
+    color: white;
+}
+
 .link_decor {
-    font-family: 'Old Standard TT', serif;
     text-align: center;
     padding: 5px 5px;
     border: 1pt solid white;
     font-size: 16pt;
 }
 
+/*Для header*/
 .header {
     display: flex;
     justify-content: center;
@@ -38,15 +59,6 @@
     background-color: rgb(168, 50, 82);
 }
 
-.link {
-    font-family: 'Old Standard TT', serif;
-    text-decoration: none;
-}
-
-.link:visited {
-    color: white;
-}
-
 .navigation_item {
     list-style-type: none;
     transition: transform 0.5s ease 0s;
@@ -55,7 +67,6 @@
 .navigation_item:hover {
     transform: scale(1.1);
     padding: 5px 5px;
-    border: 1pt solid #fff;
     box-shadow: 0 0 15px white;
     background-color: white;
 }
@@ -76,7 +87,6 @@
 }
 
 .header_text {
-    font-family: 'Old Standard TT', serif;
     width: 100%;
     padding-bottom: 20px;
     font-size: 30pt;
@@ -84,17 +94,10 @@
     color: white;
 }
 
+/*Для footer*/
 .footer {
     display: flex;
     background-color: rgb(168, 50, 82);
-}
-
-.footer_text_info {
-    font-family: 'Old Standard TT', serif;
-    text-align: center;
-    font-size: 12pt;
-    padding-top: 20px;
-    color: white;
 }
 
 .footer_logo {
@@ -102,21 +105,22 @@
     padding-right: 20px;
 }
 
+.footer_text_info {
+    text-align: center;
+    font-size: 12pt;
+    padding-top: 20px;
+    color: white;
+}
+
+/*Для main*/
 .article {
     background-color: white;
 }
 
-.article_image {
-    padding: 0 0 20px 25px;
-    height: 100%;
-}
-
 .article_header {
-    font-family: 'Old Standard TT', serif;
     text-transform: uppercase;
     text-align: center;
     font-size: 25pt;
-
     padding: 20px 0;
 }
 
@@ -125,23 +129,19 @@
     flex-wrap: nowrap;
 }
 
-.checker {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.space {
+    height: 40px;
+    background-color: rgb(168, 50, 82);
 }
 
-.article_text {
-    font-family: 'Old Standard TT', serif;
-    width: 70%;
-    font-size: 18pt;
-    padding: 20px 20px 20px 25px;
-    margin: 0 auto;
+/*Изображения*/
+.article_image {
+    padding: 0 0 20px 25px;
+    height: 100%;
 }
 
-.text_shop {
-    width: 70%;
+.article_image:hover {
+    transform: scale(1.1);
 }
 
 .image_main,
@@ -166,92 +166,24 @@
     width: 300px;
 }
 
-.article_image:hover {
-    transform: scale(1.1);
+/*Текст*/
+.article_text {
+    width: 70%;
+    font-size: 18pt;
+    padding: 20px 20px 30px 25px;
+    margin: 0 auto;
 }
 
-.article_table {
+.article_text_about {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 75%;
 }
 
-.table_shop {
-    width: 50%;
-}
-
-table {
-    table-layout: fixed;
-    width: 50%;
-    border-collapse: collapse;
-    border: 3px solid rgb(168, 50, 82);
-}
-
-th,
-td {
-    font-family: 'Old Standard TT', serif;
-    font-size: 15pt;
-    border: 2pt solid rgb(168, 50, 82);
+.text_shop {
+    width: 70%;
     text-align: center;
-}
-
-.article_information {
-    max-height: 100px;
-    overflow: hidden;
-    position: relative;
-}
-
-.read_more:checked~.article_information {
-    max-height: none;
-}
-
-.read_more:checked~.article_information .hidden_part {
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.article_information .hidden_part {
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
-    width: 100%;
-    margin-left: 20px;
-    height: 60px;
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.read_more {
-    opacity: 0;
-    position: absolute;
-}
-
-.button_read_more {
-    font-family: 'Old Standard TT', serif;
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    color: white;
-    background-color: rgb(168, 50, 82);
-    transition: 0.3s;
-}
-
-.button_read_more:hover {
-    transform: scale(1.1);
-    color: rgb(168, 50, 82);
-    background-color: white;
-    box-shadow: 0 0 15px rgb(168, 50, 82);
-}
-
-.read_more~.button_read_more::after {
-    content: 'Показать';
-}
-
-.read_more:checked~.button_read_more::after {
-    content: 'Скрыть';
 }
 
 .link_text {
@@ -269,6 +201,33 @@ td {
     color: rgb(168, 50, 82);
 }
 
+/*Таблицы*/
+.article_table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+}
+
+table {
+    table-layout: fixed;
+    width: 50%;
+    border-collapse: collapse;
+    border: 3px solid rgb(168, 50, 82);
+}
+
+th,
+td {
+    font-size: 15pt;
+    border: 2pt solid rgb(168, 50, 82);
+    text-align: center;
+}
+
+.table_shop {
+    width: 50%;
+}
+
+/*Слайдеры*/
 .slider {
     overflow: hidden;
     width: 300px;
@@ -288,18 +247,72 @@ td {
     width: 300px;
 }
 
-.space {
-    height: 40px;
-    background-color: rgb(168, 50, 82);
-}
-
-.article_text_about {
-    width: 60%;
+/*Кнопка с выпадающим текстом*/
+.checker {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.read_more {
+    opacity: 0;
+    position: absolute;
+}
+
+.read_more:checked~.article_information {
+    max-height: none;
+}
+
+.read_more:checked .hidden_part {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.read_more~.button_read_more::after {
+    content: 'Показать';
+}
+
+.read_more:checked~.button_read_more::after {
+    content: 'Скрыть';
+}
+
+.hidden_part {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
+    width: 100%;
+    margin-left: 20px;
+    height: 60px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.article_information {
+    max-height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.button_read_more {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgb(168, 50, 82);
+    transition: 0.3s;
+}
+
+.button_read_more:hover {
+    transform: scale(1.1);
+    color: rgb(168, 50, 82);
+    background-color: white;
+    box-shadow: 0 0 15px rgb(168, 50, 82);
+}
+
+/*Адаптивность*/
 @media (max-width: 1014px) {
     .article_content {
         justify-content: center;
@@ -318,16 +331,12 @@ td {
         width: 100%;
     }
 
-    .text_shop {
-        text-align: center;
+    .slider {
+        margin-left: 0;
     }
 
     .checker {
         width: 100%;
-    }
-
-    .slider {
-        margin-left: 0;
     }
 }
 
@@ -344,22 +353,18 @@ td {
         font-size: 23pt;
     }
 
-    .article_image {
-        padding-left: 25px;
+    .article_header {
+        font-size: 20pt;
+    }
+
+    .space {
+        height: 30px;
     }
 
     .image_main,
     .image_art,
     .image_shop {
         width: 300px;
-    }
-
-    table {
-        width: 55%;
-    }
-
-    .article_header {
-        font-size: 20pt;
     }
 
     .article_text {
@@ -370,13 +375,8 @@ td {
         width: 80%;
     }
 
-    .slider {
-        width: 200px;
-        margin-left: 10px;
-    }
-
-    .slider_image {
-        width: 200px;
+    table {
+        width: 55%;
     }
 
     th,
@@ -384,8 +384,12 @@ td {
         font-size: 11pt;
     }
 
-    .space {
-        height: 30px;
+    .slider {
+        width: 200px;
+    }
+
+    .slider_image {
+        width: 200px;
     }
 }
 
@@ -402,8 +406,22 @@ td {
         font-size: 20pt;
     }
 
+    .footer_logo {
+        width: 100px;
+        height: 100%;
+    }
+
+    .footer_text_info {
+        font-size: 9pt;
+        padding-top: 10px;
+    }
+
     .article_header {
         font-size: 15pt;
+    }
+
+    .space {
+        height: 25px;
     }
 
     .article_image {
@@ -433,20 +451,6 @@ td {
     td {
         font-size: 9pt;
     }
-
-    .space {
-        height: 25px;
-    }
-
-    .footer_logo {
-        width: 100px;
-        height: 100%;
-    }
-
-    .footer_text_info {
-        font-size: 9pt;
-        padding-top: 10px;
-    }
 }
 
 @media (max-width: 430px) {
@@ -463,15 +467,15 @@ td {
         width: 150px;
     }
 
-    table {
-        width: 60%;
-    }
-
     .article_text {
         font-size: 11pt;
     }
 
     .article_text_about {
         width: 95%;
+    }
+
+    table {
+        width: 60%;
     }
 }
